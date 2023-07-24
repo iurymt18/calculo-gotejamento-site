@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo-gotejamento</title>
+    <link rel="shortcut icon" href="static/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculo de gotejamento</h1>
+    <div id="interface">
+    <h2>o calculo será realizado em horas ou minutos?</h2>
+    <select id="option">
+        <option value="Horas">Horas</option>
+        <option value="Minutos">Minutos</option>
+    </select>
+    Volume: <input type="number" name="volume" id="volume">
+    Tempo: <input type="number" name="tempo" id="tempo">
+    <i class="fa-solid fa-droplet" id="gota" onclick="calcular()"></i>
+    <!--<button type="button" value="" id="button" onclick="calcular()"> </button>-->
+    
+    <div id="res"></div>
+</div>
+
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

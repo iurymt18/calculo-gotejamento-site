@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+body{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+
+
+}
+#interface{
+    font-size: 15pt;
+    width: 50%;
+    height: 60vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+#interface h2{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+#interface input{
+    text-align: center;
+    font-size: 15pt;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid blue;
+
+
+
+}
+#interface select{
+    text-align: center;
+
+    font-size: 15pt;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding: 5px;
+
+
+}
+#interface #gota{
+    font-size: 50pt;
+    color: blue;
+    padding: 20px;
+    position: relative;
+
+}
+.gota-animation{
+    animation: gota-animation .5s linear;
+
+}
+@keyframes gota-animation {
+    from{
+        top:0px;
+    }
+    to{
+        top: 110%;
+
+    }
+
+}
+/*device*/
+@media(max-width: 450px){
+body{
+    background-size: contain;
+
+}
+h1{
+    font-size: 18px;
+}
+#interface{
+    font-size: 12px;
+}
+#interface h2{
+    font-size: 20px ;
+}
+
+}
